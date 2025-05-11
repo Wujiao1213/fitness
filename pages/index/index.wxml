@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="input-item">
+    <label>健身项目</label>
+    <input placeholder="请输入健身项目" bindinput="inputProject" value="{{project}}" />
+  </view>
+  <view class="input-item">
+    <label>健身时长（分钟）</label>
+    <input type="number" placeholder="请输入健身时长" bindinput="inputDuration" value="{{duration}}" />
+  </view>
+  <view class="input-item">
+    <label>健身强度</label>
+    <input placeholder="请输入健身强度" bindinput="inputIntensity" value="{{intensity}}" />
+  </view>
+  <view class="input-item">
+    <label>日期</label>
+    <picker mode="date" value="{{date}}" start="2020-01-01" end="2030-12-31" bindchange="bindDateChange">
+      <view class="picker">
+        {{date}}
+      </view>
+    </picker>
+  </view>
+  <button bindtap="submitRecord">提交打卡</button>
+</view>    

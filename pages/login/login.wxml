@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="input-container">
+    <input type="text" placeholder="请输入账号" bindinput="onAccountInput" />
+    <input type="password" placeholder="请输入密码" bindinput="onPasswordInput" />
+  </view>
+  <button bindtap="onLogin">登录</button>
+  <view wx:if="{{errorMessage}}" class="error-message">{{errorMessage}}</view>
+  <view class="register-link" bindtap="goToRegister">没有账号？点击注册</view>
+</view>
